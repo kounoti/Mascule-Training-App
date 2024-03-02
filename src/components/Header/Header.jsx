@@ -54,7 +54,7 @@ export const Header = () => {
           onClick={onOpen}
         />
       </Flex>
-      <Drawer placrment="left" size="xs" onClose={onClose} isOpen={isOpen}>
+      <Drawer placement="left" size="xs" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay>
           <DrawerContent>
             <DrawerBody p={0} bg="gray.100">

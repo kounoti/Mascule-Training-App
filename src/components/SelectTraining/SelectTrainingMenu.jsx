@@ -11,6 +11,7 @@ import {
 export const SelectTrainingMenu = (props) => {
   const [trainingMenuState, setTrainingMenuState] = useState("");
   const { musclePartsName } = props;
+
   //   const [trainingState, setTrainingState] = useState([]);
   let trainingMenuList = [];
 
@@ -29,12 +30,13 @@ export const SelectTrainingMenu = (props) => {
   return (
     <div>
       {/* <p>{trainingMenuList}</p> */}
-      <h2>使用する器具を選択</h2>
+      <h2 style={{marginBottom:"10px"}}>使用する器具を選択</h2>
 
       <Select
         placeholder=""
         value={trainingMenuState}
         onChange={(e) => setTrainingMenuState(e.target.value)}
+        
       >
         {trainingMenuList.map((trainingName) => {
           return (
